@@ -1,0 +1,48 @@
+{
+    "name": "dom-synapse",
+    "version": "0.0.1",
+    "description": "Lightweight declarative DOM event delegation library",
+    "type": "module",
+    "main": "./dist/dom-synapse.cjs.js",
+    "module": "./dist/dom-synapse.esm.js",
+    "exports": {
+        ".": {
+            "import": "./dist/dom-synapse.js",
+            "require": "./dist/dom-synapse.umd.js"
+        }
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build --mode all",
+        "build:core": "vite build --mode core",
+        "preview": "vite preview"
+    },
+    "keywords": [
+        "dom",
+        "events",
+        "delegation",
+        "declarative",
+        "data-attributes",
+        "event-handler",
+        "synapse"
+    ],
+    "author": "Robert Snegov",
+    "license": "MIT",
+    "devDependencies": {
+        "vite": "^7.1.5"
+    },
+    "files": [
+        "dist",
+        "src",
+        "demo",
+        "README.md",
+        "LICENSE"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rx308/dom-synapse"
+    },
+    "dependencies": {
+        "swiper": "^12.0.1"
+    }
+}
